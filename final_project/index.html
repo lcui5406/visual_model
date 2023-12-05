@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Cycle Dance</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+      </head>
+      <body>
+        <div class="svgcanva" id="B" >
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"
+        integrity="sha512-jduERlz7En1IUZR54bqzpNI64AbffZWR//KJgF71SJ8D8/liKFZ+s1RxmUmB+bhCnIfzebdZsULwOrbVB5f3nQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <svg id="svg-canvas" style="background-image:url(./12.jpg);background-size:100% 100%;"  xmlns="http://www.w3.org/2000/svg">
+              <text id="text4" x="300" y="300" class="Rrrrr">Cycle Dance</text>
+              <text id="text3" x="300" y="300" class="small">This project uses the medium of coding art to real-time reflect the impact and countermeasures of the COVID-19. </text>
+              <text id="text5" x="300" y="300" class="small">Each sphere represents an individual, and the lines symbolize the connections between people and the transmission path of the pandemic.</text>
+              <text id="text6" x="300" y="300" class="small">With the changing of colors of the spheres and lines, we intuitively demonstrate the infection status, the importance of social distancing, and the effect of vaccinations.</text>
+              <text id="text7" x="300" y="300" class="small">Different color of the spheres represents the severity of the infection: white indicates healthy, yellow signifies a mild infection but would not to be dead from this status</text>
+              <text id="text8" x="300" y="300" class="small">red indicates a severe infection and may dead then, and black represents the unfortunate loss of life.</text>
+              <text id="text9" x="300" y="300" class="small">When the line turns red, ops! One healthy individual is too close to a dangerous one. It may be infected!</text>
+              <text id="text10" x="300" y="300" class="small">Do not hesitate to interact this page with your mouse! </text>
+              <text id="text11" x="300" y="300" class="small">Click your mouse inside the page, individuals close to the mouse will be linked to the mouse by green lines and be vaccinated!</text>
+              <text id="text12" x="300" y="300" class="small">Gold shields will protect them and they would have less probabilities to be infected and dead. </text>
+            
+            </svg>
+            <svg id="color-canvas"width="0" height="0">
+              <defs>
+                <radialGradient id="color1">
+                  <stop offset="0%" stop-color="#cde5e7" />
+                  <stop offset="100%" stop-color="#d4dbed"/>
+                </radialGradient>
+              </defs>
+              <defs>
+                <radialGradient id="color2">
+                  <stop offset="0%" stop-color="#d4dbed" />
+                  <stop offset="100%" stop-color="#d5e2db"/>
+                </radialGradient>
+              </defs>
+              <defs>
+                <radialGradient id="color3">
+                  <stop offset="0%" stop-color="#d5e2db" />
+                  <stop offset="100%" stop-color="#cde5e7" />
+                </radialGradient>
+              </defs>
+            </svg>
+            <script src="utils.js"></script>
+            <script src="Virus.js"></script>
+            <script src="Person.js"></script>
+            <script src="script.js"></script>
+            
+        </div>
+      </body>
+      <script type="text/javascript">
+        main();
+      </script>
+</html>
